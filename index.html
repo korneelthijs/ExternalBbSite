@@ -4,7 +4,9 @@
             var referrer =  document.referrer;
             alert(referrer);
 
-            alert(referrer.toLowerCase().indexOf("lms.uantwerpen.be")>-1);
+            alert("index of lms: " + referrer.toLowerCase().indexOf("lms.uantwerpen.be"));
+
+            alert("index of github: " + referrer.toLowerCase().indexOf("korneelthijs.github.io"));
             
             if((referrer==null) || (referrer=="")) {           
                 alert("NULL referrer 2");
