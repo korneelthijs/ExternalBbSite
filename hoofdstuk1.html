@@ -1,5 +1,12 @@
 <html>
     <head>
+        <script>
+            var referrer =  document.referrer;
+            
+            if((referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) && (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1)) {           
+                window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
+            }
+        </script>
     </head>
     <body>
         <h1>Hoofdstuk 1</h1>
