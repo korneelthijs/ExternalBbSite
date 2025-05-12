@@ -4,8 +4,8 @@
             var referrer =  document.referrer;
             alert(referrer);
             
-            if(referrer==null) {           
-                alert("NULL referrer 2 ");
+            if((referrer==null) || (referrer=="")) {           
+                alert("NULL referrer 2");
                 window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
             }
         </script>
