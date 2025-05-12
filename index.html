@@ -4,13 +4,12 @@
             var referrer =  document.referrer;
             alert(referrer);
 
-            alert("null referer: " + referrer.indexOf(""));
-
             alert("index of lms: " + referrer.toLowerCase().indexOf("lms.uantwerpen.be"));
 
             alert("index of github: " + referrer.toLowerCase().indexOf("korneelthijs.github.io"));
             
-            if(((referrer==null) || (referrer=="")) &&  ((referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) || (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1))) {           
+            //if(((referrer==null) || (referrer=="")) &&  ((referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) || (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1))) {           
+            if((referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) && (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1)) {           
                 window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
             }
         </script>
