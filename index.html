@@ -3,6 +3,11 @@
         <script>
             var referrer =  document.referrer;
             alert(referrer);
+            
+            if(referrer.indexOf("") > -1) {           
+                alert("NULL referrer");
+                window.location.replace("/error.html");
+            }
         </script>
     </head>
     <body>
