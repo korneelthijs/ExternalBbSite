@@ -3,6 +3,8 @@
         <script>
             var referrer =  document.referrer;
             alert(referrer);
+
+            alert(referrer.toLowerCase().indexOf("lms.uantwerpen.be")>-1);
             
             if((referrer==null) || (referrer=="")) {           
                 alert("NULL referrer 2");
