@@ -4,7 +4,7 @@
             var referrer =  document.referrer;
             alert(referrer);
             
-            if(referrer.indexOf("") > -1) {           
+            if(referrer==null) {           
                 alert("NULL referrer");
                 window.location.replace("/error.html");
             }
