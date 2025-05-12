@@ -8,6 +8,10 @@
                 alert("NULL referrer 2");
                 window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
             }
+            if (referrer.toLowerCase().indexOf("lms.uantwerpen.be")>-1){
+                alert("geen lms referrer");
+                window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
+            }
         </script>
     </head>
     <body>
