@@ -8,7 +8,7 @@
 
             alert("index of github: " + referrer.toLowerCase().indexOf("korneelthijs.github.io"));
             
-            if((referrer==null) || (referrer=="") || (referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) || (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1)) {           
+            if(((referrer==null) || (referrer=="")) &&  ((referrer.toLowerCase().indexOf("lms.uantwerpen.be")==-1) || (referrer.toLowerCase().indexOf("korneelthijs.github.io")==-1))) {           
                 alert("NULL referrer 2");
                 window.location.replace("https://korneelthijs.github.io/ExternalBbSite/error.html");
             }
